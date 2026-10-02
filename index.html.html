@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krishna SMM | Social Media Marketing Agency</title>
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS Styling -->
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        /* Hero Section Styling */
+        .hero-section {
+            background: linear-gradient(135deg, #0d1b2a 0%, #1b263b 100%);
+            min-height: 85vh;
+            padding: 80px 0;
+        }
+
+        /* Service Card Hover Effect */
+        .service-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 1rem 3rem rgba(0,0,0,.1) !important;
+        }
+
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            background-color: rgba(13, 110, 253, 0.1);
+        }
+
+        section {
+            position: relative;
+        }
+
+        /* Floating WhatsApp Button */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            color: #FFF;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#"><i class="fa-solid fa-bolt me-2 text-warning"></i>Krishna<span class="text-primary">SMM</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-lg-center mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+                <a href="tel:03100800519" class="btn btn-primary ms-lg-3 rounded-pill px-4"><i class="fa-solid fa-phone me-2"></i>03100800519</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section (The Above-the-Fold Area) -->
+    <header id="home" class="hero-section text-white d-flex align-items-center">
+        <div class="container text-center text-lg-start py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <span class="badge bg-primary text-white mb-3 px-3 py-2 rounded-pill fw-normal">🚀 Elevate Your Digital Presence</span>
+                    <h1 class="display-4 fw-bold mb-3">Scale Your Brand With Result-Driven Digital Marketing</h1>
+                    <p class="lead mb-4 text-light">We supercharge your business growth through strategic Google Ads, high-converting Meta Ads, and comprehensive Facebook marketing solutions.</p>
+                    <div class="d-flex flex-column flex-sm-row justify-content-center justify-content-lg-start gap-3">
+                        <a href="#contact" class="btn btn-warning btn-lg fw-bold text-dark rounded-pill px-5 shadow">Get a Quote</a>
+                        <a href="#services" class="btn btn-outline-light btn-lg rounded-pill px-4">Explore Services</a>
+                    </div>
+                </div>
+                <div class="col-lg-5 mt-5 mt-lg-0 text-center">
+                    <div class="hero-card p-4 rounded-4 shadow-lg bg-white text-dark text-start">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="bg-primary text-white rounded-circle p-3 me-3">
+                                <i class="fa-solid fa-chart-line fa-2x"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-0 fw-bold">ROI Focused</h5>
+                                <small class="text-muted">Average 4.5x Return on Ad Spend</small>
+                            </div>
+                        </div>
+                        <hr>
+                        <p class="mb-0 text-muted small"><i class="fa-solid fa-check text-success me-2"></i>Direct access to ad specialists</p>
+                        <p class="mb-0 text-muted small mt-2"><i class="fa-solid fa-check text-success me-2"></i>Dedicated campaign optimization</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Social Proof / Trust Badges -->
+    <section class="py-4 bg-light border-bottom">
+        <div class="container">
+            <div class="row text-center align-items-center text-muted">
+                <div class="col-6 col-md-3 mb-3 mb-md-0">
+                    <h5 class="fw-bold text-secondary mb-0"><i class="fa-brands fa-google text-danger me-2"></i>Google Partner</h5>
+                </div>
+                <div class="col-6 col-md-3 mb-3 mb-md-0">
+                    <h5 class="fw-bold text-secondary mb-0"><i class="fa-brands fa-meta text-primary me-2"></i>Meta Pro Certified</h5>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h5 class="fw-bold text-secondary mb-0"><i class="fa-solid fa-shield-halved text-success me-2"></i>100+ Brands Scaled</h5>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h5 class="fw-bold text-secondary mb-0"><i class="fa-solid fa-star text-warning me-2"></i>4.9/5 Client Rating</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Services / Features Grid -->
+    <section id="services" class="py-5">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold display-6">Our Core Services</h2>
+                <p class="text-muted">Tailored solutions designed to generate high-quality leads and maximize revenue.</p>
+            </div>
+            <div class="row g-4">
+                <!-- Service 1 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm p-4 service-card rounded-4">
+                        <div class="feature-icon text-primary rounded-3 mb-3 d-inline-flex align-items-center justify-content-center">
+                            <i class="fa-solid fa-rectangle-ad fa-2x"></i>
+                        </div>
+                        <h4 class="fw-bold h5">Google Ads</h4>
+                        <p class="text-muted">Capture high-intent buyers right when they search for your products or services on Google Search and YouTube.</p>
+                        <a href="#contact" class="text-decoration-none fw-bold mt-auto text-primary">Learn More <i class="fa-solid fa-arrow-right ms-1"></i></a>
+                    </div>
+                </div>
+                <!-- Service 2 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm p-4 service-card rounded-4">
+                        <div class="feature-icon text-primary rounded-3 mb-3 d-inline-flex align-items-center justify-content-center">
+                            <i class="fa-brands fa-meta fa-2x"></i>
+                        </div>
+                        <h4 class="fw-bold h5">Meta Ads</h4>
+                        <p class="text-muted">Engage targeted audiences across Meta networks with visually compelling ad campaigns that drive fast conversions.</p>
+                        <a href="#contact" class="text-decoration-none fw-bold mt-auto text-primary">Learn More <i class="fa-solid fa-arrow-right ms-1"></i></a>
+                    </div>
+                </div>
+                <!-- Service 3 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm p-4 service-card rounded-4">
+                        <div class="feature-icon text-primary rounded-3 mb-3 d-inline-flex align-items-center justify-content-center">
+                            <i class="fa-brands fa-facebook fa-2x"></i>
+                        </div>
+                        <h4 class="fw-bold h5">Facebook Marketing</h4>
+                        <p class="text-muted">Build a powerful brand community with custom Facebook marketing strategies, engaging content, and ad management.</p>
+                        <a href="#contact" class="text-decoration-none fw-bold mt-auto text-primary">Learn More <i class="fa-solid fa-arrow-right ms-1"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us / Brand Story Preview -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container py-4">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <div class="position-relative">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" alt="Team collaborating" class="img-fluid rounded-4 shadow position-relative">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <span class="text-primary fw-bold text-uppercase tracking-wider small">Who We Are</span>
+                    <h2 class="fw-bold display-6 mb-3">Driven by Data, Dedicated to Your Growth</h2>
+                    <p class="text-muted mb-4">We bridge the gap between businesses and their ideal customers. Our core mission is to remove the guesswork out of digital advertising by combining creative storytelling with advanced data analytics.</p>
+                    <div class="row g-3 mb-4">
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center">
+                                <i class="fa-solid fa-circle-check text-primary me-2"></i>
+                                <span class="fw-semibold">Transparent Reporting</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center">
+                                <i class="fa-solid fa-circle-check text-primary me-2"></i>
+                                <span class="fw-semibold">Certified Experts</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-dark rounded-pill px-4 py-2">Speak With Our Team</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Reviews Section -->
+    <section id="testimonials" class="py-5">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold display-6">What Our Clients Say</h2>
+                <p class="text-muted">Real success stories from brands we've helped scale.</p>
+            </div>
+            <div class="row g-4">
+                <!-- Review 1 -->
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm p-4 h-100 rounded-4">
+                        <div class="text-warning mb-3">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-muted mb-4">"Their expertise in Facebook and Meta ads completely transformed our online sales pipeline. Our customer acquisition cost dropped significantly!"</p>
+                        <div class="d-flex align-items-center mt-auto">
+                            <div class="bg-secondary text-white rounded-circle d-flex align-items-center justify-content-center fw-bold me-3" style="width: 45px; height: 45px;">JD</div>
+                            <div>
+                                <h6 class="mb-0 fw-bold">John Davis</h6>
+                                <small class="text-muted">E-Commerce Store Owner</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Review 2 -->
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm p-4 h-100 rounded-4">
+                        <div class="text-warning mb-3">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-muted mb-4">"Finding a reliable Google Ads agency was tough until we partnered with them. Professional communication and incredible ROI."</p>
+                        <div class="d-flex align-items-center mt-auto">
+                            <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center fw-bold me-3" style="width: 45px; height: 45px;">AS</div>
+                            <div>
+                                <h6 class="mb-0 fw-bold">Ayesha Shah</h6>
+                                <small class="text-muted">Local Business Director</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Review 3 -->
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm p-4 h-100 rounded-4">
+                        <div class="text-warning mb-3">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-muted mb-4">"Their social media marketing strategy gave our brand a unified and professional voice. Highly recommended for scaling up!"</p>
+                        <div class="d-flex align-items-center mt-auto">
+                            <div class="bg-success text-white rounded-circle d-flex align-items-center justify-content-center fw-bold me-3" style="width: 45px; height: 45px;">MR</div>
+                            <div>
+                                <h6 class="mb-0 fw-bold">Michael Ross</h6>
+                                <small class="text-muted">Tech Startup Founder</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section / Call to Action -->
+    <section id="contact" class="py-5 bg-dark text-white">
+        <div class="container py-4">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <h2 class="fw-bold display-6 mb-3">Ready to Scale Your Business?</h2>
+                    <p class="text-light mb-4">Get in touch with us today for a free audit of your current campaigns or to discuss your marketing goals.</p>
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="bg-primary text-white rounded-circle p-3 me-3">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div>
+                            <small class="text-muted d-block">Call Us Directly</small>
+                            <a href="tel:03100800519" class="text-white text-decoration-none fw-bold fs-5">03100800519</a>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <div class="bg-primary text-white rounded-circle p-3 me-3">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div>
+                            <small class="text-muted d-block">Email Us</small>
+                            <a href="mailto:krishnaffj511@gmail.com" class="text-white text-decoration-none fw-bold">krishnaffj511@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card border-0 p-4 rounded-4 shadow bg-white text-dark">
+                        <h4 class="fw-bold mb-3">Send Us a Message</h4>
+                        <form>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="text" class="form-control" id="phone" value="03100800519" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="service" class="form-label">Service Interested In</label>
+                                <select class="form-select" id="service">
+                                    <option selected>Google Ads</option>
+                                    <option>Meta Ads</option>
+                                    <option>Facebook Marketing</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100 py-2 rounded-pill fw-bold">Submit Request</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-4 border-top border-secondary">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <p class="mb-0 text-muted">&copy; 2026 Krishna SMM Agency. All rights reserved. | Contact: <strong>03100800519</strong></p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-muted text-decoration-none me-3"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="text-muted text-decoration-none me-3"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="text-muted text-decoration-none me-3"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" class="text-muted text-decoration-none"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button (Triggers Lead Modal) -->
+    <a href="#" class="whatsapp-float" data-bs-toggle="modal" data-bs-target="#whatsappLeadModal" title="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- WhatsApp Lead Form Modal -->
+    <div class="modal fade" id="whatsappLeadModal" tabindex="-1" aria-labelledby="whatsappLeadModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-4 shadow border-0">
+                <div class="modal-header bg-success text-white rounded-top-4">
+                    <h5 class="modal-title fw-bold" id="whatsappLeadModalLabel"><i class="fa-brands fa-whatsapp me-2"></i>Connect via WhatsApp</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <p class="text-muted small mb-3">Please fill out your details below to start your instant WhatsApp inquiry with Krishna SMM.</p>
+                    <form id="leadForm">
+                        <div class="mb-3">
+                            <label for="leadName" class="form-label fw-semibold">Name</label>
+                            <input type="text" class="form-control" id="leadName" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="leadAddress" class="form-label fw-semibold">Address</label>
+                            <input type="text" class="form-control" id="leadAddress" placeholder="Enter your address" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="leadCity" class="form-label fw-semibold">City</label>
+                            <input type="text" class="form-control" id="leadCity" placeholder="Enter your city" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="leadContact" class="form-label fw-semibold">Contact No</label>
+                            <input type="text" class="form-control" id="leadContact" value="03100800519" required>
+                        </div>
+                        <button type="submit" class="btn btn-success w-100 py-2 rounded-pill fw-bold"><i class="fa-brands fa-whatsapp me-2"></i>Send to WhatsApp</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- JavaScript to Handle Lead Form Submission to WhatsApp -->
+    <script>
+        document.getElementById('leadForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('leadName').value;
+            const address = document.getElementById('leadAddress').value;
+            const city = document.getElementById('leadCity').value;
+            const contact = document.getElementById('leadContact').value;
+            
+            // Format WhatsApp Message
+            const message = `Hello Krishna SMM,%0A%0AHere are my details for inquiry:%0A*Name:* ${name}%0A*Address:* ${address}%0A*City:* ${city}%0A*Contact No:* ${contact}`;
+            
+            // Open WhatsApp with pre-filled message (Targeting 03100800519)
+            const whatsappUrl = `https://wa.me/923100800519?text=${message}`;
+            window.open(whatsappUrl, '_blank');
+        });
+    </script>
+</body>
+</html>
